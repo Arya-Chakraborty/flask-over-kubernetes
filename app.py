@@ -11,3 +11,5 @@ def view_landing_page():
     print("request: ", input_json["question"])
     return_json = {'name':'arya'}
     return jsonify(return_json)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000)
